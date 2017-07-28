@@ -39,7 +39,7 @@ function getNonZeroRandomNumber(){
 
       function connect() {	
         setInterval(function(){
-          var z1 = $.parseJSON($.getValues('http://192.168.43.46:8080/getLatLong'));
+          var z1 = $.parseJSON($.getValues('http://192.168.0.103:8080/getLatLong'));
           var point = {
              latlng: [z1[0], z1[1]]
           };

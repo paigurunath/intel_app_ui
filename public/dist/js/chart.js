@@ -19,12 +19,12 @@ jQuery.extend({
 
 setInterval(function(){
 
-z1 = $.parseJSON($.getValues('http://192.168.43.46:8080/getGyroAccel'));
+z1 = $.parseJSON($.getValues('http://192.168.0.103:8080/getGyroAccel'));
 	var data_z1 = {z: z1, type: 'surface'};
 	
 	// Plotting the surfaces..
 	Plotly.newPlot('surfaceDiv', [data_z1]);
 
-},10000);
+},5000);
 
 
